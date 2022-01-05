@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6</title>
+    <style>
+        *{ 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            background-color: pink;
+        }
+        .container-top{
+            display: flex;
+        }
+        .container-top{
+            flex-grow: 6;
+            flex-direction: column;
+        }
+        header{
+            margin: 5px;
+            padding: 1em;
+            height: 60px;
+            flex-grow: 1;
+            background-color: greenyellow;
+        }
+        .container-mid{
+            display: flex;
+            flex-grow: 4;
+            height: 465px;
+        }
+        article{
+            margin: 1em 1em;
+            padding: 1em;
+            flex-grow: 3;
+            order: 1;
+            background-color: red;
+        }
+        aside{
+            margin: 1em 1em;
+            padding: 1em;
+            flex-grow: 1;
+            background-color: blueviolet;
+        }
+        footer{
+            margin: 1em 1em;
+            padding: 1em;
+            height: 60px;
+            flex-grow: 1;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-top">
+        <header>
+            Header
+        </header>
+    <div class="container-mid">
+        <article>
+            Article
+        </article>
+        <aside>
+            Aside
+        </aside>
+    </div>
+    <footer>
+        Footer
+    </footer>
+    </div>
+</body>
+</html>
