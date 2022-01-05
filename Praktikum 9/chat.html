@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <style>
+    #resultChat {
+      border: 1px solid black;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="resultChat"></div>
+
+  <br>
+
+  <input 
+    id="writeChat"
+    type="text"
+  />
+
+  <input 
+    id="sendChat" 
+    type="submit"
+    onclick="sendChat()"
+  />
+
+  <script>
+    function sendChat() {
+      const resultChat = document.getElementById('resultChat');
+      const writeChat = document.getElementById('writeChat');
+      const sendChat = document.getElementById('sendChat');
+
+      resultChat.innerHTML += '<br>' + writeChat.value;
+    }
+  </script>
+
+</body>
+</html>

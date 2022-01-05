@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <label for="hewan">Hewan</label>
+    <select id="hewan">
+        <option value="harimau">Harimau</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="kucing">Kucing</option>
+        <option value="unta">Unta</option>
+        <option value="beruang">Beruang</option>
+        <option value="ular">Ular</option>
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    <img id="gambar" src="">
+    <script>
+        function cetakGambar() {
+            const hewan = document.getElementById('hewan');
+            const gambar = document.getElementById('gambar');
+
+            if (hewan.value === 'harimau') {
+                gambar.src ='https://statik.tempo.co/data/2020/07/05/id_950376/950376_720.jpg';
+                alert ('Klik OK untuk melihat gambar harimau');
+            }
+
+            if (hewan.value === 'kelinci') {
+               gambar.src = 'https://d3p0bla3numw14.cloudfront.net/news-content/img/2021/03/23151355/binatang-peliharaan-1.jpg';
+               alert ('Ini gambar kelinci');
+            }
+
+            if (hewan.value === 'kucing') {
+               gambar.src = 'https://d3p0bla3numw14.cloudfront.net/news-content/img/2021/03/23151350/binatang-peliharaan-3.jpg';
+               alert ('Klik OK untuk melihat gambar kucing');
+            }
+
+            if (hewan.value === 'unta') {
+               gambar.src = 'https://cdn0-production-assets-kly.akamaized.net/medias/1202278/big/093453600_1460557644-rajasthan-hd-wallpapers-camel.jpg';
+               alert ('Klik OK untuk melihat gambar unta');
+            }
+
+            if (hewan.value === 'beruang') {
+               gambar.src = 'https://cdn1-production-assets-kly.akamaized.net/medias/1248929/big/079735200_1464593047-ussuri.jpg';
+               alert ('Klik OK untuk melihat gambar beruang');
+            }
+
+            if (hewan.value === 'ular') {
+               gambar.src = 'https://cdn0-production-assets-kly.akamaized.net/medias/1185717/big/024221200_1459242001-Ular_beludak-02.jpg';
+               alert ('Klik OK untuk melihat gambar ular');
+            }
+
+        }
+            
+    </script>
+</body>
+
+</html>

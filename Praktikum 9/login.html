@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Login Authentication</title>
+    <script>
+        function validationLogin(){
+            const username = document.getElementById('username');
+            const password = document.getElementById('password');
+
+            if (username.value === 'ahmad2017' && password.value === 'integrity') {
+                window.location.href= "http://www.google.com" &&
+                alert('Login Succes');
+            } else  {
+                alert('Masukkan username dan password dengan benar.');
+            }
+
+               
+        }
+
+    </script>
+</head>
+<body>
+    <label for="username">Username</label>
+    <input type="text" id="username">
+    <br>
+    <label for="password">Password</label>
+    <input type="text" id="password">
+    <br>
+    <button onclick="validationLogin()">Submit</button>
+</body>
+</html>

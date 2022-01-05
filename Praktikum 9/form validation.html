@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+	function validasi() {
+		var id_name = document.getElementById("name").value;
+		var id_email = document.getElementById("email").value;
+    var id_time = document.getElementById("time").value;
+		var id_destination = document.getElementById("dest").value;
+    var id_ticket = document.getElementById("ticket").value;
+    let area_hasil = document.getElementById("hasil");
+		if (id_name != "" && id_email != "" && id_time != "" && id_destination != "" && id_ticket != "") {
+      area_hasil.innerHTML = id_name +", "+ id_email+", "+ id_time +", "+ id_destination +","+ id_ticket;
+    }else{
+      alert('Data tidak valid !');
+		}
+	}
+</script>
+</head>
+
+<body>
+<div class="login">
+</div>
+      <div class="container">
+        </div>
+        <div class="row justify-content-center">
+          </div>
+          <div class="col-xl-6 col-sm-8">
+            </div>
+            <div class="card">
+              </div>
+              <div class="card-block">
+                </div>
+                <h1 class="h2 card-header text-center">Form Validation</h1>
+			<div class="card-body"></div>
+        <div class="row justify-content-md-center">
+          <form class="col-md-12" id="val">
+            <div>
+				<label for="name" class= "col-sm-3 col-form-label">Nama:</label>
+        <div class="col-sm-9"></div>
+				<input type="text" class="form-control" placeholder="Masukkan nama anda" id="name" name="name" />
+        <div class="row mb-3"></div>
+				<label for="email" class= "col-sm-3 col-form-label">Email:</label>
+        <div class="col-sm-9"></div>
+				<input type="email" class="form-control" placeholder="youremail@example.com" id="email" name="email"  />
+				<div class="row mb-3"></div>
+        <label for="time" class="col-sm-3 col-form-label">Jam berangkat</label>
+        <div class="col-sm-9"></div>
+        <input type="time" class="form-control" name="time" id="time" />
+        <div class="row mb-3"></div>
+        <label for="dest" class="col-sm-3 col-form-label">Tujuan</label>
+        <div class="col-sm-9"></div>
+          <input type="text" class="form-control" id="dest" name="destination" placeholder="Tujuan anda" />
+      <div class="row mb-3">
+        <label for="ticket" class="col-sm-3 col-form-label">Tiket</label>
+        <div class="col-sm-9"></div>
+          <input type="number" max="10" min= "1" class="form-control" id="ticket" name="ticket" placeholder="Jumlah tiket 1-10" />
+        </div>
+      <div class="row mb-3">
+        <div class="col-sm-9"></div>
+        <div class="col-sm-3"></div>
+        </div>
+          <button type="submit" class="btn btn-primary float-end mt-3" onclick="validasi()">Buat Tiket</button>
+          <br>
+            <span id="hasil"></span>
+          </div>
+          </form>
+          </div>
+          </body>
+          </html>
